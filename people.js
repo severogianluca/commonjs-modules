@@ -1,5 +1,14 @@
 const nomeCognome = require('./names')
 const hobby = require ('./hobbies.js')
 
-console.log(nomeCognome('gianluca', 'severo'))
-console.log(hobby('giocare', 'mangiare', 'allenarsi'))
+
+function data (){
+    return {
+        fullName: nomeCognome('gianluca', 'severo'),
+
+        hobbies: hobby('giocare', 'mangiare', 'allenarsi')  
+    }
+
+}
+
+console.log(data())
